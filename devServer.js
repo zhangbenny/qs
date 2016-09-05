@@ -17,7 +17,8 @@ app.use(require('webpack-hot-middleware')(compiler));
 // =======================================
 // Connect to MongoDB 
 // =======================================
-mongoose.connect('mongodb://localhost/quantified_skin');
+var mongoURI = MONGO_URI || 'mongodb://localhost/quantified_skin';
+mongoose.connect(mongoURI);
 
 // =======================================
 // Load routers, main is inline 
