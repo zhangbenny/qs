@@ -17,7 +17,7 @@ app.use(require('webpack-hot-middleware')(compiler));
 // =======================================
 // Connect to MongoDB 
 // =======================================
-var mongoURI = MONGO_URI || 'mongodb://localhost/quantified_skin';
+var mongoURI = 'mongodb://zhangbenny:3Dammitman@ds019766.mlab.com:19766/quanitified_skin' || 'mongodb://localhost/quantified_skin';
 mongoose.connect(mongoURI);
 
 // =======================================
@@ -39,10 +39,11 @@ require('./public/data/temperatures2016.js')
 // =======================================
 // Start Server 
 // =======================================
-app.listen(8080, 'localhost', function(err) {
+var port = process.env.PORT || 8080
+app.listen(port, function(err) {
   if (err) {
     console.log(err);
     return;
   }
-  console.log('Listening at http://localhost:8080');
+  console.log('Listening at ' + port);
 });
