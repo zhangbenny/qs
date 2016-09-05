@@ -1,75 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>How much does an H1B in the software industry pay?</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <link rel="shortcut icon" type="image/png" href="http://wes.io/ehRe/my-favourite-icon.png"/> -->
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-    <body>
-        <div class="container">
-            <div class="h1bgraph"></div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>About the graph</h3>
-                    <p>You're looking at a histogram of salaries given to H1B workers in the software industry. You can filter by year, job title, and state.</p>
-                    <p>All data is from <a href="http://h1bdata.info/">h1bdata.info</a></p>
-                </div>
-
-                <div class="col-md-4">
-                    <h3>React + d3.js</h3>
-                    <p>This site was built with React and d3.js. React is great for handling user inputs and keeping everything in sync. D3.js is great for showing data. Together they make for a wonderful combination.</p>
-                    <p>I'm releasing a short eBook on how all this works soon. You should tell me if you want it.</p>
-                    <p>
-                        <a href="https://leanpub.com/reactd3js" class="btn btn-primary btn-success">
-                            Sign up for React+d3.js eBook
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-md-4">
-                    <h3>Me</h3>
-                    <p>Hi, I'm Swizec Teller.</p>
-                    <p>I built these graphs because I'm about to apply for an H1B visa, and I wanted to see what to expect. What astounded me most was that Engineers make $20k/year more than programmers.</p>
-                    <p><blockquote class="twitter-tweet" lang="en"><p>Average H1B salaries in 2014&#10;&#10;Engineer: $87k&#10;Developer: $74k&#10;Programmer: $61k&#10;&#10;Don&#39;t call yourself a programmer <a href="http://t.co/Dlwnm4nCxh">http://t.co/Dlwnm4nCxh</a></p>&mdash; Swizec (@Swizec) <a href="https://twitter.com/Swizec/status/569946812099862528">February 23, 2015</a></blockquote>
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'h1bsalaries'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-                </div>
-            </div>
-        </div>
-
-        <script src="static/bundle.js"></script>
-
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-1464315-22', 'auto');
-  ga('send', 'pageview');
-
-</script>
-    </body>
+  </head>
+  <body>
+    <div id='root'></div>
+    <script src="static/bundle.js"></script>
+  </body>
 </html>

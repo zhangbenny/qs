@@ -1,5 +1,5 @@
 {
-  "name": "react-d3js-experiment",
+  "name": "quantified_skin",
   "version": "0.0.0",
   "description": "Experiment to see if we can get react.js and d3.js playing well together.",
   "main": "index.html",
@@ -8,16 +8,8 @@
     "build": "npm run clean && npm run build:webpack",
     "start": "node devServer.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Swizec/react-d3js-experiment.git"
-  },
-  "author": "Swizec",
+  "author": "Benny Zhang",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Swizec/react-d3js-experiment/issues"
-  },
-  "homepage": "https://github.com/Swizec/react-d3js-experiment",
   "devDependencies": {
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",
@@ -34,10 +26,28 @@
     "rimraf": "^2.4.3",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.6.0"
+    "webpack-hot-middleware": "^2.6.0",
+    "expect": "^1.14.0",
+    "expect-jsx": "^2.3.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.4.0",
+    "react-router": "^2.0.0",
+    "react-router-redux": "^4.0.0",
+    "redux-thunk": "^2.1.0",
+    "redux": "^3.3.1"
   },
   "dependencies": {
+    "axios": "^0.14.0",
+    "babel-polyfill": "^6.13.0",
+    "css-loader": "^0.24.0",
     "d3": "^3.5.12",
-    "lodash": "^3.10.1"
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "lodash": "^3.10.1",
+    "mongoose": "^4.6.0",
+    "react": "^0.14.8",
+    "style-loader": "^0.13.1"
   }
 }
