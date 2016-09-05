@@ -17,7 +17,7 @@ class Axis extends Component {
 
     let d3axis = d3.svg.axis()
                    .scale(d3scale)
-                   .orient(orient)
+                   .oriegnt(orient)
 
     d3.select(node).call(d3axis);
   }

@@ -17,7 +17,7 @@ app.use(require('webpack-hot-middleware')(compiler));
 // =======================================
 // Connect to MongoDB 
 // =======================================
-var mongoURI = MONGO_URI || 'mongodb://localhost/quantified_skin';
+var mongoURI = process.env.MONGO_URI || 'mongodb://localhost/quantified_skin';
 mongoose.connect(mongoURI);
 
 // =======================================
